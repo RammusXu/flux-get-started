@@ -8,9 +8,6 @@ metadata:
     app: echov
   annotations:
     flux.weave.works/automated: "true"
-    # flux.weave.works/tag.[container_name]
-    # flux.weave.works/tag.echo-version: regexp:^1.*
-    flux.weave.works/locked: 'true'
 spec:
   strategy:
     rollingUpdate:
