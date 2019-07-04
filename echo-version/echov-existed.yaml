@@ -1,0 +1,29 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echov-existed
+  namespace: demo
+  labels:
+    app: echov-existed
+  annotations:
+    flux.weave.works/automated: "true"
+    # tag.[container_name]
+    flux.weave.works/tag.echo-version: regexp:^1.*
+spec:
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 0
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: echov-existed
+  template:
+    metadata:
+      labels:
+        app: echov-existed
+    spec:
+      containers:
+      - name: echo-version
+        image: rammusxu/echo-version:1.0.1
+        imagePullPolicy: IfNotPresent
