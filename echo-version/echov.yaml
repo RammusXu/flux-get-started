@@ -7,9 +7,9 @@ metadata:
   labels:
     app: echov
   annotations:
-    # flux.weave.works/automated: "true"
+    flux.weave.works/automated: "true"
     # flux.weave.works/tag.[container_name]
-    flux.weave.works/tag.echo-version: regexp:^1.*
+    # flux.weave.works/tag.echo-version: regexp:^1.*
 spec:
   strategy:
     rollingUpdate:
@@ -25,5 +25,5 @@ spec:
     spec:
       containers:
       - name: echo-version
-        image: rammusxu/echo-version:1.0.2
+        image: rammusxu/echo-version:1.0.1
         imagePullPolicy: IfNotPresent
