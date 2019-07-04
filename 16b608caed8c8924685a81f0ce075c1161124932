@@ -1,0 +1,1 @@
+{"jobID":"01630f90-265e-f5b2-9fe9-321bdae6742f","spec":{"type":"policy","cause":{"Message":"","User":"Rammus Xu \u003ccomte_ken@hotmail.com\u003e"},"spec":{"demo:deployment/echov":{"add":{},"remove":{"locked":"true","locked_msg":"true","locked_user":"true"}}}},"result":null}
