@@ -8,6 +8,8 @@ metadata:
     app: echov
   annotations:
     flux.weave.works/automated: "true"
+    flux.weave.works/locked_user: Rammus Xu <comte_ken@hotmail.com>
+    flux.weave.works/locked: 'true'
 spec:
   strategy:
     rollingUpdate:
